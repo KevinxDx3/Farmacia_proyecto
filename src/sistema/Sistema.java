@@ -7,20 +7,17 @@ package sistema;
 import InicioGUI.frmInicio;
 import LoginGUI.frmLoguin;
 
-/**
- *
- * @author HOME
- */
+/*
+Creadores: Kevin Moreno, Erick Moreno, Martin Rosero
+Version: 2.0
+Fecha: 04/09/2022
+*/
 public class Sistema {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         
         frmLoguin ini=new frmLoguin();
         ini.setVisible(true);
-        // TODO code application logic here
     }
     
 }
