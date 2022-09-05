@@ -4,6 +4,7 @@
  */
 package Facturitas;
 
+
 import productosDAL.conexion;
 
 /**
@@ -49,7 +50,6 @@ public class frmFacturas extends javax.swing.JFrame {
         Preciotxt2 = new javax.swing.JTextField();
         precioFinalTxt2 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -159,8 +159,6 @@ public class frmFacturas extends javax.swing.JFrame {
 
         jLabel1.setText("FACTURA FARMACIA ");
 
-        jLabel2.setText("RUC:");
-
         jLabel3.setText("CANTIDAD");
 
         jLabel4.setText("PRODUCTOS");
@@ -211,11 +209,12 @@ public class frmFacturas extends javax.swing.JFrame {
                         .addGap(137, 137, 137))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(37, 37, 37)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(CANTIDADTXT2, javax.swing.GroupLayout.DEFAULT_SIZE, 104, Short.MAX_VALUE)
-                            .addComponent(CANTIDADTXT3)
-                            .addComponent(CANTIDADTXT1)
-                            .addComponent(CANTIDADTXT))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(CANTIDADTXT2, javax.swing.GroupLayout.DEFAULT_SIZE, 104, Short.MAX_VALUE)
+                                .addComponent(CANTIDADTXT1)
+                                .addComponent(CANTIDADTXT))
+                            .addComponent(CANTIDADTXT3, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(49, 49, 49)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(Producostxt, javax.swing.GroupLayout.DEFAULT_SIZE, 183, Short.MAX_VALUE)
@@ -223,41 +222,41 @@ public class frmFacturas extends javax.swing.JFrame {
                             .addComponent(Producostxt2)
                             .addComponent(Producostxt3))
                         .addGap(60, 60, 60)))
+                .addGap(33, 33, 33)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel2)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(Preciotxt, javax.swing.GroupLayout.DEFAULT_SIZE, 84, Short.MAX_VALUE)
+                                .addComponent(Preciotxt1))
+                            .addComponent(Preciotxt2, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Preciotxt3, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(72, 72, 72)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(precioFinalTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 78, Short.MAX_VALUE)
+                            .addComponent(precioFinalTxt1)
+                            .addComponent(precioFinalTxt2)
+                            .addComponent(precioFinalTxt3))
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(33, 33, 33)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(Preciotxt, javax.swing.GroupLayout.DEFAULT_SIZE, 84, Short.MAX_VALUE)
-                                    .addComponent(Preciotxt1)
-                                    .addComponent(Preciotxt2)
-                                    .addComponent(Preciotxt3))
-                                .addGap(72, 72, 72)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(precioFinalTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 78, Short.MAX_VALUE)
-                                    .addComponent(precioFinalTxt1)
-                                    .addComponent(precioFinalTxt2)
-                                    .addComponent(precioFinalTxt3))
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel5)
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(jLabel6)))))
+                        .addComponent(jLabel5)
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel6)))
                 .addGap(134, 134, 134))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(EjecutarBT, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BORRAR2, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(137, 137, 137)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel7)
-                    .addComponent(jLabel8)
-                    .addComponent(jLabel9))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel7))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(EjecutarBT, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(BORRAR2, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(137, 137, 137)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel8)
+                            .addComponent(jLabel9))))
                 .addGap(55, 55, 55)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(IVAtxt, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -269,9 +268,7 @@ public class frmFacturas extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(92, 92, 92)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel2))
+                .addComponent(jLabel1)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(36, 36, 36)
@@ -294,16 +291,16 @@ public class frmFacturas extends javax.swing.JFrame {
                             .addComponent(precioFinalTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(CANTIDADTXT3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(Producostxt2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(precioFinalTxt2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(CANTIDADTXT2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(Preciotxt2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(CANTIDADTXT2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(Producostxt3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Preciotxt3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(precioFinalTxt3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(precioFinalTxt3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(CANTIDADTXT3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Preciotxt3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel7)
@@ -341,9 +338,38 @@ public class frmFacturas extends javax.swing.JFrame {
 
     private void EjecutarBTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EjecutarBTActionPerformed
         // TODO add your handling code here:
-
-        conexion Objconecion=new conexion();
+       /* conexion Objconecion=new conexion();
+        VARIABLES oProductos= recuperarDatosGUI();
         
+        
+        String strSentenciaInsert = String.format("UPDATE Productos SET Stock='%s'", oProductos.getCantidad(),oProductos.getCantidad1(),oProductos.getCantidad2(),oProductos.getCantidad3());
+        
+        objConexion.ejecutarSentenciaSQL(strSentenciaInsert);*/
+        
+        double subtotal,total,pr,cany,total0,pr0,cany0,total11,pr1,cany1,total12,pr2,cany2;
+        pr=Double.parseDouble(Preciotxt.getText());
+        cany=Double.parseDouble(CANTIDADTXT.getText());
+        total=pr*cany;
+        String totall=total+ "";
+        precioFinalTxt.setText(totall);
+        
+        pr0=Double.parseDouble(Preciotxt1.getText());
+        cany0=Double.parseDouble(CANTIDADTXT1.getText());
+        total0=pr0*cany0;
+        String totala=total0+ "";
+        precioFinalTxt1.setText(totala);
+        
+        pr1=Double.parseDouble(Preciotxt2.getText());
+        cany1=Double.parseDouble(CANTIDADTXT2.getText());
+        total11=pr1*cany1;
+        String totalb=total11+ "";
+        precioFinalTxt2.setText(totalb);
+        
+        pr2=Double.parseDouble(Preciotxt3.getText());
+        cany2=Double.parseDouble(CANTIDADTXT3.getText());
+        total12=pr2*cany2;
+        String totalc=total12+ "";
+        precioFinalTxt3.setText(totalc);
         
         
     }//GEN-LAST:event_EjecutarBTActionPerformed
@@ -394,7 +420,7 @@ public class frmFacturas extends javax.swing.JFrame {
 
     private void BORRAR2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BORRAR2ActionPerformed
         // TODO add your handling code here:
-        Limpiar();
+        this.limpiar();
     }//GEN-LAST:event_BORRAR2ActionPerformed
 
     private void precioFinalTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_precioFinalTxtMouseClicked
@@ -455,7 +481,6 @@ public class frmFacturas extends javax.swing.JFrame {
     private javax.swing.JTextField Subtotaltxt;
     private javax.swing.JTextField TotalTxt;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -468,4 +493,45 @@ public class frmFacturas extends javax.swing.JFrame {
     private javax.swing.JTextField precioFinalTxt2;
     private javax.swing.JTextField precioFinalTxt3;
     // End of variables declaration//GEN-END:variables
+
+    private void limpiar() {
+    CANTIDADTXT.setText("");
+    CANTIDADTXT1.setText("");
+    CANTIDADTXT2.setText("");
+    CANTIDADTXT3.setText("");
+    Producostxt.setText("");
+    Producostxt1.setText("");
+    Producostxt2.setText("");
+    Producostxt3.setText("");
+    Preciotxt1.setText("");
+    Preciotxt2.setText("");
+    Preciotxt3.setText("");
+    Preciotxt.setText("");
+    precioFinalTxt.setText("");
+    precioFinalTxt1.setText("");
+    precioFinalTxt2.setText("");
+    precioFinalTxt3.setText("");
+    Subtotaltxt.setText("");
+    IVAtxt.setText("");
+    TotalTxt.setText("") ;
+    }
+
+    private VARIABLES recuperarDatosGUI() {
+       VARIABLES oEmpleados =new VARIABLES();
+
+        oEmpleados.setCantidad(CANTIDADTXT.getText());
+        oEmpleados.setCantidad1(CANTIDADTXT1.getText());
+        oEmpleados.setCantidad2(CANTIDADTXT2.getText());
+        oEmpleados.setCantidad3(CANTIDADTXT3.getText());
+        
+        oEmpleados.setNombre(Producostxt.getText());
+        oEmpleados.setNombre1(Producostxt1.getText());
+        oEmpleados.setNombre2(Producostxt2.getText());
+        oEmpleados.setNombre3(Producostxt3.getText());
+        
+        oEmpleados.setPrecio(Preciotxt.getText());
+        oEmpleados.setPrecio1(Preciotxt1.getText());
+        oEmpleados.setPrecio2(Preciotxt2.getText());
+        oEmpleados.setPrecio3(Preciotxt3.getText());
+        return oEmpleados; }
 }
