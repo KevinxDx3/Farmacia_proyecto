@@ -122,6 +122,11 @@ public class frmProductos extends javax.swing.JFrame {
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 78, -1, -1));
 
         txtID.setEditable(false);
+        txtID.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                txtIDMouseClicked(evt);
+            }
+        });
         getContentPane().add(txtID, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 44, 82, -1));
 
         jLabel3.setText("ID");
@@ -216,6 +221,10 @@ public class frmProductos extends javax.swing.JFrame {
     private void txtTipoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTipoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtTipoActionPerformed
+
+    private void txtIDMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtIDMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtIDMouseClicked
     
     public void mostrarDatos(){
         
