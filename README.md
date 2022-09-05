@@ -41,19 +41,24 @@ El proyecto se divide en varios modulos:
 ![image](https://user-images.githubusercontent.com/85313351/188402543-d8629443-c075-41e7-aa57-70ead4f944c5.png)
 
 2) Inicio
+
 ![image](https://user-images.githubusercontent.com/85313351/188402611-6db370a6-7ae4-43e6-b296-337e5272d26b.png)
 
 3) CRUD Productos
+
 ![image](https://user-images.githubusercontent.com/85313351/188402668-5281a49e-4d8e-4952-acdf-df4903c9f8cc.png)
 
 4) CRUD Bodega
+
 ![image](https://user-images.githubusercontent.com/85313351/188402719-430afd8b-8180-438b-b51a-be4f131009d7.png)
 
 5) CRUD Facturacion
+
 ![image](https://user-images.githubusercontent.com/85313351/188402800-6a9b942c-3175-405e-84ec-b5098893b5b0.png)
 
 Cada uno de estos cuenta con sus clases, las cuales llaman a la BDD y la leen o modifican, segun los permisos del
 usuario.
 
-En caso de existir algun error al compilar el programa, intente cambiar su version JDK en las propiedades del proyecot:
+En caso de existir algun error al compilar el programa, intente cambiar su version JDK en las propiedades del proyecto:
+
 ![image](https://user-images.githubusercontent.com/85313351/188407480-d1ed49a2-ed5c-4ce4-bbbf-7f5b14b6d3ce.png)
