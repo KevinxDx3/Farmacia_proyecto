@@ -4,10 +4,7 @@
  */
 package ProductosBL;
 
-/**
- *
- * @author HOME
- */
+
 public class productosBL {
     
     int ID;
