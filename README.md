@@ -37,6 +37,7 @@ acorde a su computador, para esto seguir los siguientes pasos:
 El proyecto se divide en varios modulos:
 
 1) Loguin
+
 ![image](https://user-images.githubusercontent.com/85313351/188402543-d8629443-c075-41e7-aa57-70ead4f944c5.png)
 
 2) Inicio
