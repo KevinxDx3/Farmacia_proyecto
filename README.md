@@ -2,9 +2,16 @@
 
 Integrantes: Martin Rosero, Kevin Moreno, Erick Palomo
 
+# SISTEMA DE FACTURACION CRUD DE FARMACIA
+
+Este proyecto tiene como objetivo la manipulacion de un BDD a travez de una interfaz grafica
+
+asi como varios aspectos de una facturacion, como calcular total a pagar, IVA, ETC.
+
 ### VIDEOS DE DOCUMENTACION DE FUNCIONAMIENTO Y EXPLICACION DEL CODIGO
 
 Video Manual de Usuario: https://youtu.be/gIi2L6OiZmg
+
 Video Manual de Desarrollo y Funcionalidad: https://youtu.be/JzRYxcLLmSU
 
 -------------------------------------------------------------------------------
@@ -47,10 +54,5 @@ El proyecto se divide en varios modulos:
 Cada uno de estos cuenta con sus clases, las cuales llaman a la BDD y la leen o modifican, segun los permisos del
 usuario.
 
-
-
-
-
-
-
-
+En caso de existir algun error al compilar el programa, intente cambiar su version JDK en las propiedades del proyecot:
+![image](https://user-images.githubusercontent.com/85313351/188407480-d1ed49a2-ed5c-4ce4-bbbf-7f5b14b6d3ce.png)
