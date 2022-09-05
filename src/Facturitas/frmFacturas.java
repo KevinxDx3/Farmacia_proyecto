@@ -5,6 +5,7 @@
 package Facturitas;
 
 
+import javax.swing.JOptionPane;
 import productosDAL.conexion;
 
 /**
@@ -346,7 +347,18 @@ public class frmFacturas extends javax.swing.JFrame {
         
         objConexion.ejecutarSentenciaSQL(strSentenciaInsert);*/
         
-        double subtotal,total,pr,cany,total0,pr0,cany0,total11,pr1,cany1,total12,pr2,cany2;
+      
+       if(Producostxt.getText().isEmpty()||Producostxt1.getText().isEmpty()||Producostxt2.getText().isEmpty()||Producostxt3.getText().isEmpty()){
+           JOptionPane.showInternalMessageDialog(null, "LLene todos  los campos o datos no registrados en la base de datos");
+       }
+       else if(CANTIDADTXT.getText().isEmpty()||CANTIDADTXT1.getText().isEmpty()||CANTIDADTXT2.getText().isEmpty()||CANTIDADTXT3.getText().isEmpty()){
+           JOptionPane.showInternalMessageDialog(null, "LLene todos  los campos o datos no registrados en la base de datos");
+       }
+       else if(Preciotxt.getText().isEmpty()||Preciotxt1.getText().isEmpty()||Preciotxt2.getText().isEmpty()||Preciotxt3.getText().isEmpty()){
+           JOptionPane.showInternalMessageDialog(null, "LLene todos  los campos o datos no registrados en la base de datos");
+       }
+       else{
+        double subtotal,total,pr,cany,total0,pr0,cany0,total11,pr1,cany1,total12,pr2,cany2,ivaa,sumatotal;
         pr=Double.parseDouble(Preciotxt.getText());
         cany=Double.parseDouble(CANTIDADTXT.getText());
         total=pr*cany;
@@ -371,6 +383,18 @@ public class frmFacturas extends javax.swing.JFrame {
         String totalc=total12+ "";
         precioFinalTxt3.setText(totalc);
         
+        subtotal=total+total0+total11+total12;
+        String toalSub=subtotal+"";
+        Subtotaltxt.setText(toalSub);
+        
+        ivaa=subtotal*0.12;
+        String ivas=ivaa+"";
+        IVAtxt.setText(ivas);
+        
+        sumatotal=ivaa+subtotal;
+        String suma=sumatotal+"";
+        TotalTxt.setText(suma);
+       }
         
     }//GEN-LAST:event_EjecutarBTActionPerformed
 
