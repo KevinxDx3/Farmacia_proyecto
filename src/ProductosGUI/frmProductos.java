@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package ProductosGUI;
+import InicioGUI.frmInicio;
 import ProductosBL.productosBL;
 import productosDAL.conexion;
 import java.sql.ResultSet;
@@ -58,6 +59,7 @@ public class frmProductos extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         txtPVP = new javax.swing.JTextField();
         txtStock = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -122,11 +124,6 @@ public class frmProductos extends javax.swing.JFrame {
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 78, -1, -1));
 
         txtID.setEditable(false);
-        txtID.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                txtIDMouseClicked(evt);
-            }
-        });
         getContentPane().add(txtID, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 44, 82, -1));
 
         jLabel3.setText("ID");
@@ -145,6 +142,14 @@ public class frmProductos extends javax.swing.JFrame {
         });
         getContentPane().add(txtPVP, new org.netbeans.lib.awtextra.AbsoluteConstraints(515, 100, 146, -1));
         getContentPane().add(txtStock, new org.netbeans.lib.awtextra.AbsoluteConstraints(517, 156, 144, -1));
+
+        jButton1.setText("regresar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 20, -1, -1));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/farmacia.png"))); // NOI18N
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 770, 660));
@@ -222,9 +227,12 @@ public class frmProductos extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtTipoActionPerformed
 
-    private void txtIDMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtIDMouseClicked
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtIDMouseClicked
+        frmInicio Loguin=new frmInicio();
+        Loguin.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
     
     public void mostrarDatos(){
         
@@ -331,6 +339,7 @@ public class frmProductos extends javax.swing.JFrame {
     private javax.swing.JButton btnAgregar;
     private javax.swing.JButton btnBorrar;
     private javax.swing.JButton btnEditar;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

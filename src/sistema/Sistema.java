@@ -5,6 +5,7 @@
 package sistema;
 
 import InicioGUI.frmInicio;
+import LoginGUI.frmLoguin;
 
 /**
  *
@@ -17,7 +18,7 @@ public class Sistema {
      */
     public static void main(String[] args) {
         
-        frmInicio ini=new frmInicio();
+        frmLoguin ini=new frmLoguin();
         ini.setVisible(true);
         // TODO code application logic here
     }

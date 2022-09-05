@@ -5,6 +5,7 @@
 package Facturitas;
 
 
+import InicioGUI.frmInicio;
 import javax.swing.JOptionPane;
 import productosDAL.conexion;
 
@@ -59,8 +60,11 @@ public class frmFacturas extends javax.swing.JFrame {
         Producostxt3 = new javax.swing.JTextField();
         Preciotxt3 = new javax.swing.JTextField();
         BORRAR2 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         precioFinalTxt3.setEditable(false);
         precioFinalTxt3.addActionListener(new java.awt.event.ActionListener() {
@@ -68,30 +72,39 @@ public class frmFacturas extends javax.swing.JFrame {
                 precioFinalTxt3ActionPerformed(evt);
             }
         });
+        getContentPane().add(precioFinalTxt3, new org.netbeans.lib.awtextra.AbsoluteConstraints(622, 286, 78, -1));
 
         CANTIDADTXT2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CANTIDADTXT2ActionPerformed(evt);
             }
         });
+        getContentPane().add(CANTIDADTXT2, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 252, 104, -1));
 
         CANTIDADTXT3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CANTIDADTXT3ActionPerformed(evt);
             }
         });
+        getContentPane().add(CANTIDADTXT3, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 286, 104, -1));
 
         jLabel7.setText("SUBTOTAL");
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(477, 329, -1, -1));
 
         jLabel8.setText("IVA");
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(498, 369, -1, -1));
 
         jLabel9.setText("TOTAL");
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(498, 409, -1, -1));
 
         Subtotaltxt.setEditable(false);
+        getContentPane().add(Subtotaltxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(588, 326, 124, -1));
 
         IVAtxt.setEditable(false);
+        getContentPane().add(IVAtxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(588, 366, 124, -1));
 
         TotalTxt.setEditable(false);
+        getContentPane().add(TotalTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(588, 406, 124, -1));
 
         EjecutarBT.setText("Ejecutar");
         EjecutarBT.addActionListener(new java.awt.event.ActionListener() {
@@ -99,18 +112,21 @@ public class frmFacturas extends javax.swing.JFrame {
                 EjecutarBTActionPerformed(evt);
             }
         });
+        getContentPane().add(EjecutarBT, new org.netbeans.lib.awtextra.AbsoluteConstraints(267, 353, 92, 35));
 
         Producostxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ProducostxtActionPerformed(evt);
             }
         });
+        getContentPane().add(Producostxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 178, 183, -1));
 
         Preciotxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 PreciotxtActionPerformed(evt);
             }
         });
+        getContentPane().add(Preciotxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(466, 178, 84, -1));
 
         precioFinalTxt.setEditable(false);
         precioFinalTxt.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -118,18 +134,21 @@ public class frmFacturas extends javax.swing.JFrame {
                 precioFinalTxtMouseClicked(evt);
             }
         });
+        getContentPane().add(precioFinalTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(622, 178, 78, -1));
 
         Producostxt1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Producostxt1ActionPerformed(evt);
             }
         });
+        getContentPane().add(Producostxt1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 212, 183, -1));
 
         Preciotxt1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Preciotxt1ActionPerformed(evt);
             }
         });
+        getContentPane().add(Preciotxt1, new org.netbeans.lib.awtextra.AbsoluteConstraints(466, 212, 84, -1));
 
         precioFinalTxt1.setEditable(false);
         precioFinalTxt1.addActionListener(new java.awt.event.ActionListener() {
@@ -137,54 +156,69 @@ public class frmFacturas extends javax.swing.JFrame {
                 precioFinalTxt1ActionPerformed(evt);
             }
         });
+        getContentPane().add(precioFinalTxt1, new org.netbeans.lib.awtextra.AbsoluteConstraints(622, 212, 78, -1));
 
         CANTIDADTXT1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CANTIDADTXT1ActionPerformed(evt);
             }
         });
+        getContentPane().add(CANTIDADTXT1, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 212, 104, -1));
 
         Producostxt2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Producostxt2ActionPerformed(evt);
             }
         });
+        getContentPane().add(Producostxt2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 252, 183, -1));
 
         Preciotxt2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Preciotxt2ActionPerformed(evt);
             }
         });
+        getContentPane().add(Preciotxt2, new org.netbeans.lib.awtextra.AbsoluteConstraints(466, 252, 84, -1));
 
         precioFinalTxt2.setEditable(false);
+        getContentPane().add(precioFinalTxt2, new org.netbeans.lib.awtextra.AbsoluteConstraints(622, 252, 78, -1));
 
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 102));
         jLabel1.setText("FACTURA FARMACIA ");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, 390, 70));
 
         jLabel3.setText("CANTIDAD");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 144, -1, -1));
 
         jLabel4.setText("PRODUCTOS");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(228, 144, -1, -1));
 
         jLabel5.setText("PRECIO");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(466, 144, -1, -1));
 
         jLabel6.setText("PRECIO TOTAL");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(622, 144, -1, -1));
 
         CANTIDADTXT.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CANTIDADTXTActionPerformed(evt);
             }
         });
+        getContentPane().add(CANTIDADTXT, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 178, 104, -1));
 
         Producostxt3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Producostxt3ActionPerformed(evt);
             }
         });
+        getContentPane().add(Producostxt3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 286, 183, -1));
 
         Preciotxt3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Preciotxt3ActionPerformed(evt);
             }
         });
+        getContentPane().add(Preciotxt3, new org.netbeans.lib.awtextra.AbsoluteConstraints(466, 286, 84, -1));
 
         BORRAR2.setText("LIMPIAR");
         BORRAR2.addActionListener(new java.awt.event.ActionListener() {
@@ -192,135 +226,18 @@ public class frmFacturas extends javax.swing.JFrame {
                 BORRAR2ActionPerformed(evt);
             }
         });
+        getContentPane().add(BORRAR2, new org.netbeans.lib.awtextra.AbsoluteConstraints(267, 406, 94, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(43, 43, 43)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel3)
-                                .addGap(127, 127, 127)
-                                .addComponent(jLabel4)))
-                        .addGap(137, 137, 137))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(37, 37, 37)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(CANTIDADTXT2, javax.swing.GroupLayout.DEFAULT_SIZE, 104, Short.MAX_VALUE)
-                                .addComponent(CANTIDADTXT1)
-                                .addComponent(CANTIDADTXT))
-                            .addComponent(CANTIDADTXT3, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(49, 49, 49)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(Producostxt, javax.swing.GroupLayout.DEFAULT_SIZE, 183, Short.MAX_VALUE)
-                            .addComponent(Producostxt1)
-                            .addComponent(Producostxt2)
-                            .addComponent(Producostxt3))
-                        .addGap(60, 60, 60)))
-                .addGap(33, 33, 33)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(Preciotxt, javax.swing.GroupLayout.DEFAULT_SIZE, 84, Short.MAX_VALUE)
-                                .addComponent(Preciotxt1))
-                            .addComponent(Preciotxt2, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Preciotxt3, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(72, 72, 72)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(precioFinalTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 78, Short.MAX_VALUE)
-                            .addComponent(precioFinalTxt1)
-                            .addComponent(precioFinalTxt2)
-                            .addComponent(precioFinalTxt3))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel5)
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jLabel6)))
-                .addGap(134, 134, 134))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel7))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(EjecutarBT, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(BORRAR2, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(137, 137, 137)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel8)
-                            .addComponent(jLabel9))))
-                .addGap(55, 55, 55)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(IVAtxt, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Subtotaltxt, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TotalTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(122, 122, 122))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(92, 92, 92)
-                .addComponent(jLabel1)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(36, 36, 36)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel6)
-                            .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(CANTIDADTXT, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Producostxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Preciotxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(precioFinalTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(CANTIDADTXT1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Producostxt1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Preciotxt1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(precioFinalTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(Producostxt2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(precioFinalTxt2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(CANTIDADTXT2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Preciotxt2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(Producostxt3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(precioFinalTxt3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(CANTIDADTXT3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Preciotxt3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel7)
-                            .addComponent(Subtotaltxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(IVAtxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel8))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(EjecutarBT, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(TotalTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel9)
-                    .addComponent(BORRAR2))
-                .addGap(147, 147, 147))
-        );
+        jButton1.setText("regresar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(669, 36, -1, -1));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/farmacia.png"))); // NOI18N
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-3, -4, 840, 580));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -451,6 +368,14 @@ public class frmFacturas extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_precioFinalTxtMouseClicked
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        
+        frmInicio Loguin=new frmInicio();
+        Loguin.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -504,7 +429,9 @@ public class frmFacturas extends javax.swing.JFrame {
     private javax.swing.JTextField Producostxt3;
     private javax.swing.JTextField Subtotaltxt;
     private javax.swing.JTextField TotalTxt;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;

@@ -4,7 +4,11 @@
  */
 package InicioGUI;
 
+import BodegueroGUI.bodega;
+import Facturitas.frmFacturas;
 import LoginGUI.frmLoguin;
+import ProductosGUI.frmProductos;
+import ProductosGUI.frmProductos1;
 
 /**
  *
@@ -31,7 +35,7 @@ public class frmInicio extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        cajero = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -71,17 +75,17 @@ public class frmInicio extends javax.swing.JFrame {
         });
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 240, 230, 110));
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/cajerobtn.png"))); // NOI18N
-        jButton1.setText("Cajero");
-        jButton1.setBorderPainted(false);
-        jButton1.setContentAreaFilled(false);
-        jButton1.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/cajerobtn-click.png"))); // NOI18N
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        cajero.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/cajerobtn.png"))); // NOI18N
+        cajero.setText("Cajero");
+        cajero.setBorderPainted(false);
+        cajero.setContentAreaFilled(false);
+        cajero.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/cajerobtn-click.png"))); // NOI18N
+        cajero.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                cajeroActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 430, 240, 110));
+        getContentPane().add(cajero, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 430, 240, 110));
 
         jLabel2.setText("INTEGRANTES:");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 620, -1, 22));
@@ -126,23 +130,23 @@ public class frmInicio extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void cajeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cajeroActionPerformed
         // TODO add your handling code here:
-        frmLoguin Loguin=new frmLoguin();
+        frmFacturas Loguin=new frmFacturas();
         Loguin.setVisible(true);
         dispose();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_cajeroActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        frmLoguin Loguin=new frmLoguin();
+        frmProductos Loguin=new frmProductos();
         Loguin.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        frmLoguin Loguin=new frmLoguin();
+        bodega Loguin=new bodega();
         Loguin.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
@@ -183,7 +187,7 @@ public class frmInicio extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton cajero;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
