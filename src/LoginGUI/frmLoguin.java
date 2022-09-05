@@ -5,6 +5,7 @@
 package LoginGUI;
 
 
+import Facturitas.frmFacturas;
 import ProductosGUI.frmProductos;
 import javax.swing.JOptionPane;
 
@@ -115,8 +116,8 @@ public class frmLoguin extends javax.swing.JFrame {
             
           if(txtUsuario.getText().equals(Cajero) && Pass.equals(PassCajero)){
             
-              frmProductos PRD=new frmProductos();
-              PRD.setVisible(true);
+              frmFacturas FC=new frmFacturas();
+              FC.setVisible(true);
               dispose();
               
        
