@@ -15,7 +15,8 @@ import java.sql.ResultSet;
  */
 public class conexion {
     
-    String strConexionDB ="jdbc:sqlite:D:/NO ELIMINAR/Documents/db/Farmacia.s3db";
+    String strConexionDB ="jdbc:sqlite:D:/NEATBENS/TRABAJOS/Farmacia_proyecto/Base de Datos/Farmacia.s3db";
+    //"jdbc:sqlite:D:/NO ELIMINAR/Documents/db/Farmacia.s3db"
     Connection conn= null;
     
     public conexion(){
