@@ -4,10 +4,6 @@
  */
 package LoguinBL;
 
-/**
- *
- * @author HOME
- */
 public class LoguinBL {
     
 

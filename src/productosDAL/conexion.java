@@ -9,17 +9,16 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-/**
- *
- * @author HOME
- * 
- * "jdbc:sqlite:D:/NO ELIMINAR/Documents/db/Farmacia.s3db"
+/*
+ *Direccion de la conexion de la BDD "jdbc:sqlite:D:/NO ELIMINAR/Documents/db/Farmacia.s3db"
  */
 public class conexion {
     
+    //En caso de tener otra direccion de base de datos cambiar aqui
     String strConexionDB ="jdbc:sqlite:D:/NO ELIMINAR/Documents/db/Farmacia.s3db";
     Connection conn= null;
     
+    //Metodo para Verificar y mandar mensaje en caso de ERROR
     public conexion(){
         try {
             Class.forName("org.sqlite.JDBC");
