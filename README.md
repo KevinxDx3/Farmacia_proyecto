@@ -20,6 +20,8 @@ Video Manual de Desarrollo y Funcionalidad: https://youtu.be/JzRYxcLLmSU
 
 Proyecto Desarrollado en NetBeans 14
 
+Usuario: admin Contraseña: 123
+
 Para su correcto funcionamiento sera necesario cambiar la direccion de la BDD
 acorde a su computador, para esto seguir los siguientes pasos:
 
